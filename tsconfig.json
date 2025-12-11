@@ -16,11 +16,12 @@
     "types": ["@cloudflare/workers-types"]
   },
   "include": [
-    "src/**/*"
+    "src/index.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
-    "**/*.test.ts"
+    "**/*.test.ts",
+    "**/test-setup.ts"
   ]
 }

@@ -16,11 +16,3 @@ vars = { ENVIRONMENT = "production" }
 [env.development]
 name = "mep-mcp-server-dev"
 vars = { ENVIRONMENT = "development" }
-
-# Build configuration
-[build]
-command = "npm run build"
-
-# TypeScript configuration
-[build.upload]
-format = "modules"
