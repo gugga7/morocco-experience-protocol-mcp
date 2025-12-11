@@ -1,0 +1,26 @@
+# Cloudflare Workers configuration for MEP MCP Server
+name = "morocco-experience-protocol-mcp"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
+
+# Production environment
+[env.production]
+name = "mep-mcp-server-production"
+vars = { ENVIRONMENT = "production" }
+
+# Development environment  
+[env.development]
+name = "mep-mcp-server-dev"
+vars = { ENVIRONMENT = "development" }
+
+# Build configuration
+[build]
+command = "npm run build"
+
+# TypeScript configuration
+[build.upload]
+format = "modules"

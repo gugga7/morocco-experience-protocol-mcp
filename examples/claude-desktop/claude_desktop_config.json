@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "morocco-experience-protocol": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-fetch", 
+        "https://mep-mcp-server-production.info6625.workers.dev/sse"
+      ]
+    }
+  }
+}
